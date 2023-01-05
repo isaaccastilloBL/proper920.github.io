@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root{
+    --dark: #202020;
+    --light: #ffffff;
+    --darker: #181a1b;
+    --gray: #a9a9a9;
+    --purple: #8a2be2;
+    --shadow: #0f0f0f;
+
+    --font: 'Montserrat', sans-serif;
+    --bold: 700;
+    --normal: 400;
+}
+
+body{
+    background-color: var(--dark);
+    font-family: var(--font);
+    font-weight: var(--bold);
+}
+
+i{
+    color : var(--light);
+}
+
+i:hover{
+    color : var(--gray);
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    color: var(--light);
+}
+
+footer{
+    text-align: center;
+    opacity: 50%;
+}
+
+small{
+    color: var(--gray);
+}
+
+.container{
+    padding: 4vh 10vw;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 20vw;
+}
+
+.links a{
+    color: var(--light);
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0 1vh;
+}
+
+.content{
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    padding: 10vh 0;
+}
+
+.info{
+    padding-left: 5vw;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2vh;
+    padding: 2vh 0;
+}
+
+.card{
+    background-color: var(--darker);
+    padding: 2vh 2vw;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px 0 var(--shadow);
+}
+
+.card:hover{
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 8px 0 var(--shadow);
+}
+
+.card div{
+    width: 50%;
+}
+
+.heart-text{
+    color: var(--purple);
+}
