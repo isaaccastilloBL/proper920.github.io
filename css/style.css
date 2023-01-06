@@ -83,11 +83,14 @@ small{
     padding: 2vh 0;
 }
 
+/* alinear los elementos horizontalmente */
 .card{
     background-color: var(--darker);
     padding: 2vh 2vw;
     border-radius: 15px;
     box-shadow: 0 2px 4px 0 var(--shadow);
+    display: flex;
+    justify-content: space-between;
 }
 
 .card:hover{
@@ -100,6 +103,25 @@ small{
     width: 50%;
 }
 
+.card img{
+    width: 20%;
+    height: 100%;
+}
+
+.card-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
 .heart-text{
     color: var(--purple);
+}
+
+.color-example{
+    width: 50%;
+    height: 100%; 
+    margin: 0 2vh;
 }
