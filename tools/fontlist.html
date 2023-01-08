@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/43139af2bd.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/img/favicon.png">
+
+    <title>Font List</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="/index.html"><img class="logo" src="/svg/properlogo.svg" alt="Logo"></a>
+
+            <div class="links">
+                <a href="https://github.com/proper920"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/isaaccastillobl/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://isaaccastillo.ml"><i class="fa-solid fa-link"></i></a>
+            </div>
+        </div>
+
+        <div class="content">
+            <p class="info">A collection of fonts for project development.</p>
+
+            <input type="text" id="font-example" maxlength="10" placeholder="Type Something...">
+
+            <div class="grid">
+                <a href="#" onclick="copyToClipboard('Montserrat')" class="card"
+                    style="font-family: 'Montserrat', sans-serif;">
+                    <div class="font-example">
+                        <p class="font-example-p">
+                            Aa Bb
+                        </p>
+                    </div>
+                    <div>
+                        <p>Montserrat</p>
+                        <p><small>Julieta Ulanovsky</small></p>
+                    </div>
+                </a>
+
+                <a href="#" onclick="copyToClipboard('Open Sans')" class="card" style="font-family: 'Open Sans';">
+                    <div class="font-example">
+                        <p class="font-example-p">
+                            Aa Bb
+                        </p>
+                    </div>
+                    <div>
+                        <p>Open Sans</p>
+                        <p><small>Steve Matteson</small></p>
+                    </div>
+                </a>
+
+                <a href="#" onclick="copyToClipboard('Space Mono')" class="card" style="font-family: 'Space Mono';">
+                    <div class="font-example">
+                        <p class="font-example-p">
+                            Aa Bb
+                        </p>
+                    </div>
+                    <div>
+                        <p>Space Mono</p>
+                        <p><small>Colophon</small></p>
+                    </div>
+                </a>
+
+                <a href="#" onclick="copyToClipboard('Kristen ITC')" class="card" style="font-family: 'Kristen ITC';">
+                    <div class="font-example">
+                        <p class="font-example-p">
+                            Aa Bb
+                        </p>
+                    </div>
+                    <div>
+                        <p>Kristen ITC</p>
+                        <p><small>Microsoft</small></p>
+                    </div>
+                </a>
+
+                <a href="#" onclick="copyToClipboard('Lato')" class="card" style="font-family: 'Lato';">
+                    <div class="font-example">
+                        <p class="font-example-p">
+                            Aa Bb
+                        </p>
+                    </div>
+                    <div>
+                        <p>Lato</p>
+                        <p><small>Łukasz Dziedzic</small></p>
+                    </div>
+                </a>
+
+                <a href="#" onclick="copyToClipboard('Roboto')" class="card" style="font-family: 'Roboto';">
+                    <div class="font-example">
+                        <p class="font-example-p">
+                            Aa Bb
+                        </p>
+                    </div>
+                    <div>
+                        <p>Roboto</p>
+                        <p><small>Christian Robertson</small></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2023 Proper.</p>
+        </footer>
+    </div>
+
+    <script>
+        function copyToClipboard(text) {
+            var dummy = document.createElement("textarea");
+            document.body.appendChild(dummy);
+            dummy.value = text;
+            dummy.select();
+            document.execCommand("copy");
+            document.body.removeChild(dummy);
+        }
+
+        var fontExample = document.getElementById("font-example");
+        var fontExamples = document.getElementsByClassName("font-example-p");
+
+        fontExample.addEventListener("keyup", function () {
+            for (var i = 0; i < fontExamples.length; i++) {
+                fontExamples[i].innerHTML = fontExample.value;
+                if (fontExample.value == "") {
+                    fontExamples[i].innerHTML = "Aa Bb";
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

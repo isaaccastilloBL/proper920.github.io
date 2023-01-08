@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
-:root{
+:root {
     --dark: #202020;
     --light: #ffffff;
     --darker: #181a1b;
@@ -13,78 +11,92 @@
     --normal: 400;
 }
 
-body{
+body {
     background-color: var(--dark);
     font-family: var(--font);
     font-weight: var(--bold);
 }
 
-i{
-    color : var(--light);
-}
-
-i:hover{
-    color : var(--gray);
-}
-
-a{
-    text-decoration: none;
-}
-
-p{
+i {
     color: var(--light);
 }
 
-footer{
+i:hover {
+    color: var(--gray);
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: var(--light);
+    overflow: hidden;
+}
+
+footer {
     text-align: center;
     opacity: 50%;
 }
 
-small{
+small {
     color: var(--gray);
 }
 
-.container{
+input {
+    background-color: var(--darker);
+    border: none;
+    color: var(--light);
+    font-size: 1rem;
+    padding: 1vh 1vh;
+    box-shadow: 0 2px 4px 0 var(--shadow);
+    font-family: var(--font);
+}
+
+input:focus {
+    outline: none;
+}
+
+.container {
     padding: 4vh 10vw;
 }
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo{
+.logo {
     width: 20vw;
 }
 
-.links a{
+.links a {
     color: var(--light);
     text-decoration: none;
     font-size: 1.2rem;
     padding: 0 1vh;
 }
 
-.content{
+.content {
     display: flex;
     align-items: left;
     flex-direction: column;
     padding: 10vh 0;
 }
 
-.info{
+.info {
     padding-left: 5vw;
 }
 
-.grid{
+.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 2vh;
     padding: 2vh 0;
 }
 
-/* alinear los elementos horizontalmente */
-.card{
+.card {
     background-color: var(--darker);
     padding: 2vh 2vw;
     border-radius: 15px;
@@ -93,22 +105,22 @@ small{
     justify-content: space-between;
 }
 
-.card:hover{
+.card:hover {
     transform: scale(1.02);
     transition: all 0.2s ease-in-out;
     box-shadow: 0 4px 8px 0 var(--shadow);
 }
 
-.card div{
+.card div {
     width: 50%;
 }
 
-.card img{
+.img-icon {
     width: 20%;
     height: 100%;
 }
 
-.card-icon{
+.card-icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,12 +128,22 @@ small{
     height: 100%;
 }
 
-.heart-text{
+.heart-text {
     color: var(--purple);
 }
 
-.color-example{
+.color-example {
     width: 50%;
-    height: 100%; 
+    height: 100%;
     margin: 0 2vh;
+}
+
+.font-example {
+    font-size: 1.5rem;
+    font-weight: var(--bold);
+    margin: 0 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }

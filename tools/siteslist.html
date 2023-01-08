@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/43139af2bd.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/img/favicon.png?">
+
+    <title>Useful Sites</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="/index.html"><img class="logo" src="/svg/properlogo.svg" alt="Logo"></a>
+            <div class="links">
+                <a href="https://github.com/proper920"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/isaaccastillobl/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://isaaccastillo.ml"><i class="fa-solid fa-link"></i></a>
+            </div>
+        </div>
+
+        <div class="content">
+            <p class="info">A collection of useful sites for project development.</p>
+
+            <div class="grid">
+                <a class="card" href="https://temp-mail.org/">
+                    <div class="card-icon">
+                    </div>
+                    <div>
+                        <p>Temp Mail</p>
+                        <p><small>Temporary email</small></p>
+                    </div>
+                </a>
+
+                <a class="card" href="https://excalidraw.com/">
+                    <div class="card-icon">
+                    </div>
+                    <div>
+                        <p>Excalidraw</p>
+                        <p><small>Whiteboard</small></p>
+                    </div>
+                </a>
+
+                <a class="card" href="https://send-anywhere.com/">
+                    <div class="card-icon">
+                    </div>
+                    <div>
+                        <p>Send Anywhere</p>
+                        <p><small>File transfer</small></p>
+                    </div>
+                </a>
+
+                <a class="card" href="https://123apps.com/">
+                    <div class="card-icon">
+                    </div>
+                    <div>
+                        <p>123apps</p>
+                        <p><small>Web apps</small></p>
+                    </div>
+                </a>
+
+                <a class="card" href="https://www.watermarkremover.io/">
+                    <div class="card-icon">
+                    </div>
+                    <div>
+                        <p>Watermark Remover</p>
+                        <p><small>Remove watermarks</small></p>
+                    </div>
+                </a>
+
+                <a class="card" href="https://uiverse.io/">
+                    <div class="card-icon">
+                    </div>
+                    <div>
+                        <p>Uiverse</p>
+                        <p><small>UI design</small></p>
+                    </div>
+                </a>
+
+                <a class="card" href="https://devdocs.io/">
+                    <div class="card-icon">
+                    </div>
+                    <div>
+                        <p>DevDocs</p>
+                        <p><small>Documentation</small></p>
+                    </div>
+                </a>
+
+                <a class="card" href="https://10015.io/">
+                    <div class="card-icon">
+                    </div>
+                    <div>
+                        <p>10015</p>
+                        <p><small>Web apps</small></p>
+                    </div>
+                </a>
+
+                <a class="card" href="https://ohshitgit.com/">
+                    <div class="card-icon">
+                    </div>
+                    <div>
+                        <p>Oh Shit Git</p>
+                        <p><small>Git guide</small></p>
+                    </div>
+                </a>
+
+                <a class="card" href="https://boxicons.com/">
+                    <div class="card-icon">
+                    </div>
+                    <div>
+                        <p>Boxicons</p>
+                        <p><small>Icons</small></p>
+                    </div>
+                </a>
+
+                <a class="card" href="https://undraw.co/">
+                    <div class="card-icon">
+                    </div>
+                    <div>
+                        <p>unDraw</p>
+                        <p><small>Illustrations</small></p>
+                    </div>
+                </a>
+
+                <a class="card" href="https://jitter.video/">
+                    <div class="card-icon">
+                    </div>
+                    <div>
+                        <p>Jitter</p>
+                        <p><small>Video Creator</small></p>
+                    </div>
+                </a>
+
+                <a class="card" href="https://latex.codecogs.com/eqneditor/editor.php">
+                    <div class="card-icon">
+                    </div>
+                    <div>
+                        <p>LaTeX Equation Editor</p>
+                        <p><small>Equations</small></p>
+                    </div>
+                </a>
+
+                <a class="card" href="https://www.w3schools.com/colors/colors_picker.asp">
+                    <div class="card-icon">
+                    </div>
+                    <div>
+                        <p>W3Schools Color Picker</p>
+                        <p><small>Color picker</small></p>
+                    </div>
+                </a>
+
+                <a class="card" href="https://docs.emmet.io/cheat-sheet/">
+                    <div class="card-icon">
+                    </div>
+                    <div>
+                        <p>Emmet Cheat Sheet</p>
+                        <p><small>Cheat sheet</small></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2023 Proper.</p>
+        </footer>
+    </div>
+    <script>
+        function getIcon(url) {
+            return "https://www.google.com/s2/favicons?domain=" + url + "&sz=32";
+        }
+
+        var cards = document.getElementsByClassName("card-icon");
+        for (var i = 0; i < cards.length; i++) {
+            var card = cards[i];
+            var url = card.parentElement.href;
+            card.innerHTML = "<img src='" + getIcon(url) + "' alt=''>";
+        }
+    </script>
+</body>
+
+</html>
